@@ -1,0 +1,40 @@
+@import "../../Responsive.scss";
+.sb{
+    // background-color: blueviolet;
+    padding: 2px;
+    margin-left: -35px;
+  
+    .sbb{
+        margin-left: 1px;
+        padding: 2px;
+        
+        button{
+          padding: 20px;
+          border: none;
+          cursor: pointer;
+         
+          margin-left: 8px;
+          border-radius: 10px;
+          font-weight: bolder;
+          &:hover{
+            background-color: #fece51;
+            
+          } 
+        }
+    }
+    input{
+        margin: 5px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 10px;
+        @include sm{
+          padding: 10px;
+         }
+    }
+    .mainsbb{
+        margin-left: 10px;
+
+    }
+}

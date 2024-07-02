@@ -1,0 +1,29 @@
+@import "../../Responsive.scss";
+.layout{
+    // background-color: darkgray;
+    height: 100vh;
+    max-width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include lg{
+        // overflow: hidden;
+        max-width: 990px;
+        
+       }
+      
+       @include md{
+    
+        max-width: 770px;
+       }
+       @include sm{
+        
+        max-width: 600px;
+       }     
+    .content{
+        height: calc(100vh - 80px);
+        // background-color: darkred;
+    }
+}

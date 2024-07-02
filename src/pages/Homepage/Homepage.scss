@@ -1,0 +1,93 @@
+@import "../../Responsive.scss";
+.homepage{
+    height: 100%;
+    display: flex;
+    .textcontainer{
+        flex: 3;
+        // background-color: burlywood;
+        @include sm{
+              
+            padding-left:30px;
+        }
+        span{
+            font-family:cursive;
+           color: #fece51;
+         
+            
+        }
+        .wrapper{
+            height: 100%;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 35px;
+            // background-color: aqua;
+           
+          .mainhead{
+           
+            @include lg{
+                font-size: 40px;
+                padding-top: 150px;
+            }
+            @include md{
+                margin-top: 40px;
+                font-size: 34px;
+                padding:5px;
+            }
+         
+            @include sm{
+              
+                
+               padding: 5px;
+               flex-wrap:wrap ;
+                font-size: 30px;
+            
+            }
+           
+          
+          }
+        }
+        
+        @include lg{
+            padding: 30px;
+        }
+       
+        
+        .boxes{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                color: rgb(0, 17, 255);
+            }
+            @include sm{
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        
+    }
+    .imgcontainer{
+        width:50%;
+        // background-color:cadetblue;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include lg{
+                
+        }
+        @include sm{
+            display: none;
+           
+        }
+        .imgi{
+            width: 115%;
+            position: absolute;
+            right: 0;
+           
+        }
+        
+    }
+}
